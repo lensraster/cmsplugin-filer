@@ -28,7 +28,7 @@ class FilerImage(CMSPlugin):
                      )
     STYLE_CHOICES = settings.CMSPLUGIN_FILER_IMAGE_STYLE_CHOICES
     DEFAULT_STYLE = settings.CMSPLUGIN_FILER_IMAGE_DEFAULT_STYLE
-    EXCLUDED_KEYS = ['class', 'href', 'target', ]
+    EXCLUDED_KEYS = ['href', 'target', ]
 
     style = models.CharField(
         _('Style'), choices=STYLE_CHOICES, default=DEFAULT_STYLE, max_length=50, blank=True)
